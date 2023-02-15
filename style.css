@@ -59,13 +59,14 @@ main{
     font-weight: bold;
 }
 .card2{
-        height: fit-content;
+        height: 300px;
         width: 490px;
         background-color: rgb(250, 237, 237);
         border: 20px solid yellowgreen;
         border-radius: 11px;
         margin: 10px;
         padding: 20px;
+        overflow: auto;
     }
 .newCard2{
         border: 5px solid black;
@@ -104,6 +105,13 @@ main{
     border-radius: 11px;
 }
 
+#mainPage{
+    height: 40px;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 11px;
+
+}
 @media screen and (max-width: 480px){
     body{
         height: auto;
@@ -153,7 +161,13 @@ main{
         font-weight: bold;
         width: 150px;
         border-radius: 11px;
-    
+    }
+    #mainPage{
+        height: 30px;
+        font-weight: bold;
+        width: 150px;
+        border-radius: 11px;
+
     }
     
     #operation{
@@ -177,13 +191,15 @@ main{
         font-weight: bold;
     }
     .card2{
-            height: fit-content;
+            height: 200px;
             width: 300px;
             background-color: rgb(250, 237, 237);
             border: 10px solid yellowgreen;
             border-radius: 11px;
             margin:0;
             padding: 20px;
+            overflow: auto;
+
         }
     .newCard2{
             border: 3px solid black;
