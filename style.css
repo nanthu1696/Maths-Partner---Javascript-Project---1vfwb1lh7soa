@@ -1,8 +1,11 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body{
     padding: 0;
     margin : 0;
     width: 100%;
-    background-color: rgb(62, 61, 106);
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 div{
     display: inline-block;
@@ -14,7 +17,8 @@ button{
 header{
     height: 100px;
     width: auto;
-    padding: 20px;
+    padding: 15px;
+    color: whitesmoke;
 }
 main{
     height: 500px;
@@ -63,7 +67,7 @@ main{
         margin: 10px;
         padding: 20px;
     }
-    .newCard2{
+.newCard2{
         border: 5px solid black;
         border-radius: 11px;
         width: 470px;
@@ -71,4 +75,125 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+}
+
+#search{
+    border-radius: 30%;
+    font-size: 25px;
+    height: 50px;
+    width: 60px;
+}
+
+#history{
+    height: 40px;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 11px;
+
+}
+
+#operation{
+    height: 40px;
+    width: 200px;
+    border-radius: 11px;
+}
+
+.inputfields{
+    height: 30px;
+    width: 150px;
+    border-radius: 11px;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        height: auto;
+        width: auto;
     }
+    header{
+        height: 50px;
+        width: auto;
+        padding: 15px;
+        margin: auto;
+    }
+    main{
+        height: 500px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #container{
+        padding: 10px;
+        height: auto;
+        width: auto;
+        border: 10px solid yellowgreen;
+        border-radius: 11px;
+        background-color: rgb(250, 237, 237);
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        height: 200px;
+        width: 300px;
+        background-color: rgb(250, 237, 237);
+        border: 10px solid yellowgreen;
+        border-radius: 11px;
+        margin:0;
+        padding: 20px;
+    }
+    #search{
+        border-radius: 30%;
+        font-size: 20px;
+        height: 30px;
+        width: 40px;
+    }
+    
+    #history{
+        height: 30px;
+        font-weight: bold;
+        width: 150px;
+        border-radius: 11px;
+    
+    }
+    
+    #operation{
+        height: 30px;
+        width: 150px;
+        border-radius: 11px;
+    }
+    
+    .inputfields{
+        height: 30px;
+        width: 150px;
+        border-radius: 11px;
+    }
+    .newCard{
+        border: 3px solid black;
+        border-radius: 11px;
+        width: 95%;
+        padding: 5px;
+    }
+    .newCard p{
+        font-weight: bold;
+    }
+    .card2{
+            height: fit-content;
+            width: 300px;
+            background-color: rgb(250, 237, 237);
+            border: 10px solid yellowgreen;
+            border-radius: 11px;
+            margin:0;
+            padding: 20px;
+        }
+    .newCard2{
+            border: 3px solid black;
+            border-radius: 11px;
+            width: 95%;
+            padding: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+    }
+}
